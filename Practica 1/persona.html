@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="title"></h1>
+        <h2 id="datos"></h2>
+        <ul>
+            <li id="nom"></li>
+            <li id="cognoms"></li>
+            <li id="edat"></li>
+            <li id="datadenaixement"></li>
+            <li id="telefon"></li>
+            <li id="adreçapostal"></li>
+            <li id="adreçaelectronica"></li>
+            <li id="treballa"></li>
+            <li id="alçada"></li>
+        </ul>
+        <script>
+            // strings
+            var nom = "leonel";
+            var cognom = "ruiz";
+            var adreçapostal  = "barcelona calle calabria,08015";
+            var adreçaelectronica = "yosoy@gmail.com";
+   
+            // char
+            var datadenaixement = '1996-10-96'; //YYYY-MM-DD
+            
+            //integers
+            var telefon = 699766721;
+            var alçada = 165; //cms  
+            var edat = 24; 
+            //boolean
+            var treballa = true;   // true - false
+   
+            //functions
+            document.getElementById("title").innerHTML = "Descrivint a " + nom + " " + cognom;
+            document.getElementById("datos").innerHTML = "Les dades de " + nom + " són:";
+            document.getElementById("nom").innerHTML = "Su nombre es " + nom + " " + cognom;
+            document.getElementById("edat").innerHTML = "La edat es " + edat;
+            document.getElementById("datadenaixement").innerHTML = "Va  a nacer el " + datadenaixement;
+            document.getElementById("telefon").innerHTML = "Su numero de telefono es:" + telefon;
+            document.getElementById("adreçapostal").innerHTML = "vive en " + adreçapostal;
+            document.getElementById("adreçaelectronica").innerHTML = "Su correo electronico:" + adreçaelectronica;
+            document.getElementById("treballa").innerHTML = "Actualmente "+(treballa ? "si" : "no" ) + " " +"trabaja";
+            
+       </script>
+        <form action="./persona.php" method="get"></form>
+    </body>
+</html>
